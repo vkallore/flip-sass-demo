@@ -1,0 +1,19 @@
+.bg-info {
+ background: $bg-color-info;
+ p {
+   line-height: ($line-height * 2.25);
+ }
+}
+
+
+.bg-success {
+ background: $bg-color-success;
+ p {
+   line-height: ($line-height * 3.25);
+   color: #000;
+ }
+ > .sub-success {
+   color: #ccc;
+ }
+}
+
