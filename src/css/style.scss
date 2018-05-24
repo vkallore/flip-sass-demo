@@ -1,12 +1,35 @@
-$body-color: #000;
-$body-bg-color: #ccc;
-$font-family: 'Arial';
+$bg-color-danger: #f00 !default;
+$bg-color-info: #f0f !default;
+$bg-color-success: #eff !default;
+$line-height: 12px !default;
 body {
- font-size: 12px;
- background-color: $body-bg-color;
- color: $body-color;
- a {
-   color: #f00;
- }
+  font-size: 12px;
+}
+b {
+  font-size: 16px;
+}
+.bg-danger {
+  background: $bg-color-danger;
+  color: #fff;
+  b {
+    font-size: 14px;
+  }
 }
 
+.bg-info {
+  background: $bg-color-info;
+  p {
+    line-height: ($line-height * 2.25);
+  }
+}
+
+.bg-success {
+  background: $bg-color-success;
+  p {
+    line-height: ($line-height * 3.25);
+    color: #000;
+  }
+  > .sub-success {
+    color: #ccc;
+  }
+}
